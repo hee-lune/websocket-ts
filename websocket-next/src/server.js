@@ -24,7 +24,7 @@ app
     });
 
     server.listen(port, () => {
-      console.debug(`> Runnning on http://localhost:${port}`);
+      console.debug(`> Running on http://localhost:${port}`);
     });
   })
   .catch(() => {
