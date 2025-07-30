@@ -1,7 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TasksService } from './tasks.service';
+import { PrismaService } from '../prisma.service';
 
 @Module({
-  providers: [TasksService]
+  providers: [TasksService, PrismaService],
+  exports: [TasksService],
 })
 export class TasksModule {}
+
